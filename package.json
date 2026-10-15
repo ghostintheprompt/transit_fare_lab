@@ -1,0 +1,12 @@
+{
+  "name": "transit-fare-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reproducible lab for transit-fare-system vulnerability classes, modeled on real confirmed findings from the OMNY account-management engagement.",
+  "scripts": {
+    "test": "node cases/01-idor-card-balance/test.js && node cases/02-missing-reauth-contact-update/test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
