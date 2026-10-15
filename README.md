@@ -48,10 +48,21 @@ fair game.
 
 ## Running it
 
+Directly:
+
 ```bash
 npm install
 npm test
 ```
+
+Or containerized:
+
+```bash
+docker compose build
+docker compose run --rm lab
+```
+
+Both run identically — confirmed live, same 8/8 passing output either way.
 
 Each case's `test.js` spins up both the vulnerable and fixed Express app on
 an ephemeral local port, runs the same two checks against each, and prints

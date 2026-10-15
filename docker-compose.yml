@@ -1,0 +1,4 @@
+services:
+  lab:
+    build: .
+    container_name: transit-fare-lab
